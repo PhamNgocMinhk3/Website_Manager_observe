@@ -1,0 +1,30 @@
+﻿@model QLThaoGiang.Models.DangKyThaoGiang
+
+<table width="100%" style="margin-left: 10px">
+    <tr>
+        <td width="50%">Họ và tên giảng viên được đánh giá: @Model.GiangVien.HoTenGV</td>
+        <td width="50%">Bộ môn: @Model.TenMonHoc</td>
+
+    </tr>
+    <tr>
+        <td>Khoa: Viện Kỹ thuật Công nghệ</td>
+        <td>Ngày: @Html.FormatValue(@Model.NgayThaoGiang, "{0:dd/MM/yyyy}")</td>
+    </tr>
+    <tr>
+        <td>Khoa / Viện: Kỹ Thuật Công Nghệ</td>
+        <td>Học Phần: @Model.TenMonHoc</td>
+    </tr>
+    <tr>
+        <td>Lớp HP: @Model.NhomHoc</td>
+        <td>Sĩ Số: @Html.Action("NhapSiSo", "DangKyDuGio", new { maDG = ViewBag.madg })</td>
+    </tr>
+    <tr>
+        <td>Nội dung tiết giảng: @Model.TenBaiHoc</td>
+        <td>Thời gian: tiết @Model.TietBD</td>
+
+    </tr>
+    <tr>
+        <td>Địa Điểm: @Model.DiaDiem</td>
+        <td>@Html.Action("TenCT", "DangKyDuGio", new { ma = ViewBag.maphieu })</td>
+    </tr>
+</table>

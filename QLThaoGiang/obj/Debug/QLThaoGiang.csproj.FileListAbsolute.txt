@@ -1,0 +1,433 @@
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll.config
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.pdb
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe.config
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.rsp
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe.config
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.rsp
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.AppContext.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Collections.Immutable.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Console.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Globalization.Calendars.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Http.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Sockets.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Reflection.Metadata.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.ValueTuple.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe.config
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.rsp
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe.config
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Microsoft.Web.Infrastructure.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\PagedList.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\WebGrease.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\PagedList.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.pdb
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.AssemblyReference.cache
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CoreCompileInputs.cache
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CopyComplete
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.dll
+D:\lapTrinhWeb\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.pdb
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll.config
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.pdb
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe.config
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.rsp
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe.config
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.rsp
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.AppContext.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Console.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Globalization.Calendars.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Http.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Sockets.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.ValueTuple.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe.config
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.rsp
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Microsoft.Web.Infrastructure.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\PagedList.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\WebGrease.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\PagedList.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.pdb
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.AssemblyReference.cache
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CoreCompileInputs.cache
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CopyComplete
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.pdb
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\EPPlus.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.dll
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\EPPlus.xml
+D:\C#\website\phương lỗi lầm\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.xml
+D:\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll.config
+D:\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll
+D:\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.pdb
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe.config
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.rsp
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe.config
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.rsp
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.AppContext.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Collections.Immutable.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Console.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Globalization.Calendars.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Http.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Sockets.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Reflection.Metadata.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.ValueTuple.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe.config
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.rsp
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe
+D:\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe.config
+D:\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.dll
+D:\QLThaoGiang\QLThaoGiang\bin\EPPlus.dll
+D:\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.dll
+D:\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\QLThaoGiang\QLThaoGiang\bin\Microsoft.Web.Infrastructure.dll
+D:\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.dll
+D:\QLThaoGiang\QLThaoGiang\bin\PagedList.dll
+D:\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.dll
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.dll
+D:\QLThaoGiang\QLThaoGiang\bin\WebGrease.dll
+D:\QLThaoGiang\QLThaoGiang\bin\EPPlus.xml
+D:\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.xml
+D:\QLThaoGiang\QLThaoGiang\bin\PagedList.xml
+D:\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.xml
+D:\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.xml
+D:\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.xml
+D:\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.pdb
+D:\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.AssemblyReference.cache
+D:\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CoreCompileInputs.cache
+D:\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CopyComplete
+D:\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.dll
+D:\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.pdb
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll.config
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.pdb
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe.config
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.rsp
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe.config
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.rsp
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.AppContext.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Console.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Http.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.ValueTuple.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe.config
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.rsp
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\EPPlus.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\PagedList.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\WebGrease.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\EPPlus.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\PagedList.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.pdb
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.AssemblyReference.cache
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CopyComplete
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.dll
+C:\Users\lenovo\Downloads\minh\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.pdb
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll.config
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\QLThaoGiang.pdb
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.exe.config
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csc.rsp
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.exe.config
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\csi.rsp
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.AppContext.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Console.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Http.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.ValueTuple.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.exe.config
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\vbc.rsp
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\EPPlus.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\PagedList.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\WebGrease.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\EPPlus.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\EPPlusExtensions.Standard.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\PagedList.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\PagedList.Mvc.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Helpers.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Mvc.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Optimization.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.Razor.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\System.Web.WebPages.Razor.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Newtonsoft.Json.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Antlr3.Runtime.pdb
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.AssemblyReference.cache
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.csproj.CopyComplete
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\obj\Debug\QLThaoGiang.pdb
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Spire.Doc.dll
+C:\Users\lenovo\Downloads\QuanTrong\QLThaoGiang\QLThaoGiang\bin\Spire.Doc.xml

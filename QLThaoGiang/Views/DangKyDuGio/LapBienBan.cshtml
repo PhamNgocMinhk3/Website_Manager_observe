@@ -1,0 +1,194 @@
+﻿@{
+
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<div class="container align-content-center" id="noidung">
+    <table width="100%" style="margin-bottom: 25px">
+        <tr>
+            <td style="text-align: center; width:47%;">
+                <div>TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT</div>
+                <div>KHOA/VIỆN KỸ THUẬT CÔNG NGHỆ</div>
+            </td>
+            <td style="text-align: center; width: 53%;">
+                <div>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                <div><b>Độc lập - Tự do - Hạnh phúc</b></div>
+            </td>
+        </tr>
+    </table>
+
+    <h2 style="text-align:center">BIÊN BẢN TỔNG HỢP KẾT QUẢ ĐÁNH GIÁ GIỜ GIẢNG</h2>
+    <form class="form-group" name="f" method="post" action="~/DangKyDuGio/XacNhanBienBan">
+        @Html.Action("ThongTinBienBan", "DangKyDuGio", new { ma = ViewBag.MaDK })
+        <div>
+
+           
+            <h4 style="">I.TỔNG HỢP ĐIỂM ĐÁNH GIÁ CỦA CÁC THÀNH VIÊN NHÓM DỰ GIỜ:</h4>
+            @Html.Action("XemDSThanhVien", "DangKyDuGio", new { ma = ViewBag.MaDK })
+
+            
+            <h4 style="">II.TỔNG HỢP CÁC NHẬN XÉT BỔ SUNG:</h4>
+            <div class=" mb-3">
+                <label class="control-label col-md-3">Ưu Điểm Giờ Giảng:</label>
+                <div class="col-md-9">
+
+                    @Html.Action("TongHopNhanXet", "DangKyDuGio", new { maDK = ViewBag.MaDK, MaNX = 1 })
+                </div>
+            </div>
+            <div class=" mb-3">
+                <label class="control-label col-md-3">Điểm Yếu Giờ Giảng:</label>
+                <div class="col-md-9">
+                    @Html.Action("TongHopNhanXet", "DangKyDuGio", new { maDK = ViewBag.MaDK, MaNX = 2 })
+                </div>
+            </div>
+            <div class=" mb-3">
+                <label class="control-label col-md-3">Góp Ý của đoàn dự giờ:</label>
+                <div class="col-md-9">
+                    @Html.Action("TongHopNhanXet", "DangKyDuGio", new { maDK = ViewBag.MaDK, MaNX = 3 })
+                </div>
+            </div>
+            <h4>
+                III.KẾT LUẬN: @if (ViewBag.dtb >= 85)
+                {
+                    <span>Tốt</span>
+                }
+                else if (ViewBag.dtb >= 75 && ViewBag.dtb < 85)
+                {
+                    <span>Khá</span>
+                }
+                else if (ViewBag.dtb >= 70 && ViewBag.dtb < 75)
+                {
+                    <span>Trung Bình (đạt)</span>
+                }
+                else
+                {
+                    <span>Yếu (không đạt)</span>
+                }
+            </h4>
+            <table class="table table-bordered bang">
+                <thead>
+                    <tr>
+                        <th colspan="1" style="text-align:center;border-block-end:none;justify-content:center">Tổng Điểm</th>
+                        <th colspan="2" style="text-align:center;border-block-end:none;justify-content:center">Xếp Loại</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Điểm đạt từ 85- 100</td>
+                        <td>
+                            Giờ giảng được xếp loại: <strong>Tốt</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Điểm đạt từ 75 – cận 85</td>
+                        <td>
+                            Giờ giảng được xếp loại: <strong>Khá</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Điểm đạt từ 70 – cận 75
+                        </td>
+                        <td>
+                            Giờ giảng được xếp loại: <strong>Trung Bình (đạt)</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Điểm đạt dưới 70</td>
+                        <td>
+                            Giờ giảng được xếp loại: <strong>Yếu (không đạt)</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" >
+                <tr >
+                    <td width="50%" style="padding-top:30px"><b>Giám đốc chương trình</b></td>
+                    <td width="50%" style="padding-top:30px"><b>Thư ký (Người tổng hợp)</b></td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 5%; padding-left: 3px">
+                        <b>
+                            @ViewBag.gd
+
+                        </b>
+                    </td>
+                    <td style="padding-top: 5%"><b>
+                             @Html.Action("TenThuKy", "DangKyDuGio", new { madk= ViewBag.MaDK })
+
+                       </b></td>
+                </tr>
+            </table>
+            @if (ViewBag.kt == 0)
+            {
+
+                <div class="form-group ">
+                    <div class="col-md-offset-2 col-md-10 text-center">
+                        <input type="submit" value="Xác Nhận" class="btn btn-success" style="width:30%;" />
+                    </div>
+                </div>
+
+            }
+
+
+
+            <div>
+                <br />
+            </div>
+            <div class="m-3">
+            </div>
+        </div>
+    </form>
+</div>
+@if (ViewBag.kt == 1)
+{
+
+    <div class="col-md-4 text-center text-justify align-center">
+        <form id="exportForm">
+            <button type="button" class="btn btn-primary">Xuất File Word</button>
+        </form>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var btnExport = document.querySelector('.btn-primary');
+
+    if (btnExport) {
+        btnExport.addEventListener('click', function () {
+            // Tạo một form ẩn để gửi dữ liệu đến action "ConvertToWord"
+            var form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '@Url.Action("ConvertToWord", "XuatWord")';
+            form.style.display = 'none';
+
+            // Tạo một input ẩn để chứa nội dung HTML cần chuyển đổi
+            var inputHtmlContent = document.createElement('input');
+            inputHtmlContent.type = 'hidden';
+            inputHtmlContent.name = 'htmlContent';
+
+            var cssStyle = '<style> .bang table { border-collapse: collapse; } .bang table, .bang th, .bang td { border: 1px solid black; } body { font-family: "Times New Roman", Times, serif; } p { margin: 0; } p, h2, h4 { line-height: 1.5; margin-top: 0; margin-bottom: 0; </style>';
+
+            // Set the value of inputHtmlContent to include CSS styles
+            inputHtmlContent.value = cssStyle + document.getElementById("noidung").innerHTML;
+
+
+            // Thêm inputHtmlContent vào form
+            form.appendChild(inputHtmlContent);
+
+            // Thêm form vào body để gửi dữ liệu
+            document.body.appendChild(form);
+
+            // Submit form
+            form.submit();
+
+            // Xóa form khỏi body sau khi hoàn thành
+            document.body.removeChild(form);
+        });
+    }
+    });
+
+    </script>
+
+}
+
+
+
+

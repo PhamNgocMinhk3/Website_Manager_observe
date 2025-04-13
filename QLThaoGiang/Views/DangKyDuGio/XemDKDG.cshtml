@@ -1,0 +1,98 @@
+﻿@model IEnumerable<QLThaoGiang.Models.DuGio>
+@{
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<h3> Xem Danh Sách Dự Giờ</h3>
+@if (Session["TaiKhoan"] != null)
+{
+    <table class="table">
+        <tr>
+
+            <th>
+                Giảng Viên
+            </th>
+
+            <th>
+                Địa điểm
+            </th>
+            <th>
+                Thời gian
+            </th>
+            <th>
+                Trạng Thai Thư Ký
+            </th>
+
+            <th>Phiếu chấm</th>
+        </tr>
+        @if (Model != null)
+        {
+
+            foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @item.DangKyThaoGiang.GiangVien.HoTenGV
+                    </td>
+
+                    <td>
+                        @item.DangKyThaoGiang.DiaDiem
+                    </td>
+                    <td>
+                        @item.DangKyThaoGiang.TietBD
+                    </td>
+                    <td>
+                        @if (item.ThuKy == false)
+                        {<span>Không</span>}
+                        else
+                        { <span>Có</span>}
+                    </td>
+
+                    <td style="display: flex">
+                        <a href="~/DangKyDuGio/PhieuCham/@item.MaDuGio">
+                            <buttun type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Lập phiếu</buttun>
+                        </a>
+                        <form method="post" action="~/DangKyDuGio/XoaDuGio" onsubmit="return confirm('Bạn có chắc chắn muốn xóa không?');">
+                            <input value="@item.MaDuGio" name="id" type="hidden" />
+                            <button class="btn btn-danger" style="margin-left: 10px" type="submit">Hủy</button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        }
+        @if (ViewBag.SL == 0)
+        {
+            <tr>
+
+                <td>
+                    Trống
+                </td>
+
+                <td>
+                    Trống
+                </td>
+                <td>
+                    Trống
+                </td>
+                <td>
+                    Trống
+                </td>
+
+                <td>
+                    Trống
+                </td>
+            </tr>
+
+        }
+
+
+
+
+
+    </table>
+}
+else
+{
+    <p>Ban chua dang nhap</p>
+}

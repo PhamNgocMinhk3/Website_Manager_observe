@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "DoiMatKhau";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    .container {
+        background-color: #f9f9f9; /* Màu xám nhạt */
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666666;
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+    }
+
+    /* Các CSS liên quan đến nút "Change Password" */
+    .nutlam button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .nutlam button:hover {
+            background-color: #0056b3;
+        }
+
+
+  
+
+    .input-group {
+        position: relative;
+    }
+
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <h2>Thay đổi mật khẩu</h2>
+    <form id="changePasswordForm" >
+        <div class="form-group">
+            <label for="newPassword">Mật khẩu mới:</label>
+            <div class="input-group">
+                <input type="password" id="newPassword" name="newPassword" required>
+                <span class="toggle-password" onclick="togglePassword('newPassword')">👁️</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Nhập lại mật khẩu mới:</label>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="oldPassword">Mật khẩu cũ:</label>
+            <div class="input-group">
+                <input type="password" id="oldPassword" name="oldPassword" required>
+                <span class="toggle-password" onclick="togglePassword('oldPassword')">👁️</span>
+            </div>
+        </div>
+        <div class="nutlam">
+            <!-- Lớp mới chứa nút "Change Password" -->
+            <button type="submit" style="font-size: 18px;">Xác nhận</button>
+        </div>
+        
+    </form>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  var inputs = document.querySelectorAll('input[type="password"]');
+  inputs.forEach(function(input) {
+    input.addEventListener('input', function() {
+      var inputLength = input.value.length;
+      if (inputLength > 0) {
+        input.style.fontSize = '16px'; // Điều chỉnh kích thước font chữ
+      } else {
+        input.style.fontSize = ''; // Đặt lại kích thước font chữ mặc định
+      }
+    });
+  });
+});
+
+function togglePassword(inputId) {
+  var input = document.getElementById(inputId);
+  var icon = document.querySelector('#' + inputId + ' + .toggle-password');
+
+  if (input.type === "password") {
+    input.type = "text";
+    icon.textContent = "🔒";
+    input.classList.add('show-password');
+  } else {
+    input.type = "password";
+    icon.textContent = "👁️";
+    input.classList.remove('show-password');
+  }
+}
+    document.getElementById('changePasswordForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var newPassword = document.getElementById('newPassword').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+        var oldPassword = document.getElementById('oldPassword').value;
+
+        if (newPassword !== confirmPassword) {
+            alert('Mật khẩu mới không khớp với nhau!');
+            return;
+        }
+
+        // Gọi API để thay đổi mật khẩu
+        fetch('/User/DoiMatKhau', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                newPassword: newPassword,
+                oldPassword: oldPassword
+            })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Có lỗi xảy ra khi thực hiện yêu cầu.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.st === 200) {
+                    alert('Thay đổi mật khẩu thành công!');
+                    window.location.reload();
+                } else {
+                    alert('Thay đổi mật khẩu thất bại! Hãy kiểm tra lại!');
+                }
+            })
+            .catch(error => {
+                console.error('Đã xảy ra lỗi:', error);
+                alert('Lỗi hệ thống! Hãy thực hiện lại sau ! ');
+            });
+    });
+
+</script>
+

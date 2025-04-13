@@ -1,0 +1,49 @@
+﻿@model IEnumerable<QLThaoGiang.Models.DSDiem>
+    @{ 
+        Double sum = 0;
+    }
+
+<table class="table table-bordered bang" style="max-width: 580px">
+    <thead>
+        <tr>
+            <th colspan="1" style="text-align:center;border-block-end:none;justify-content:center">Thành viên</th>
+            <th colspan="2" style="text-align:center;border-block-end:none;justify-content:center;max-width: 30px">Điểm đánh giá</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            sum += item.Tong;
+            <tr>
+                <td>Thành viên @item.HoTenGV</td>
+                <td>
+                    @item.Tong
+
+                </td>
+            </tr>
+
+        }
+
+
+
+
+        <tr>
+            <td colspan="1">Tổng Điểm:</td>
+            <td colspan="2">
+                @sum
+                <span>/@(ViewBag.sl*100)</span>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="1">Điểm Trung Bình:</td>
+            <td colspan="2">
+                @ViewBag.tb
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>
+<input type="hidden" name="TongDiem" value="@sum"/>
+<input type="hidden" name="madg" value="@ViewBag.madg" />

@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Chi Tiết";
+
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<div class="container align-content-center" id="noidung">
+
+    @Html.Action("DauTrangXemLaiPhieu", "DangKyDuGio", new { ma = ViewBag.Ma })
+
+
+    @Html.Action("DiemPhieuChamXemLai", "DangKyDuGio", new { ma = ViewBag.Ma })
+
+
+    @Html.Action("NhanXetXemLai", "DangKyDuGio", new { ma = ViewBag.Ma })
+
+
+
+
+    <div>
+        <br />
+    </div>
+    <div class="m-3" style="text-align: right; color: black;">
+        <h4 style="margin-right: 40px;">Người dự giờ</h4>
+        
+        <br /><br /><br />
+        <div style="margin-right:35px; font-size: 17px; ">@Session["Ten"]</div>
+    </div>
+
+</div>
+<div class="col-md-4 text-center text-justify align-center">
+    <form id="exportForm">
+        <button type="button" class="btn btn-primary" >Xuất File Word</button>
+    </form>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var btnExport = document.querySelector('.btn-primary');
+
+    if (btnExport) {
+        btnExport.addEventListener('click', function () {
+            // Tạo một form ẩn để gửi dữ liệu đến action "ConvertToWord"
+            var form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '@Url.Action("ConvertToWord", "XuatWord")';
+            form.style.display = 'none';
+
+            // Tạo một input ẩn để chứa nội dung HTML cần chuyển đổi
+            var inputHtmlContent = document.createElement('input');
+            inputHtmlContent.type = 'hidden';
+            inputHtmlContent.name = 'htmlContent';
+
+            var cssStyle = '<style> #bangdiem table { border-collapse: collapse; } #bangdiem table, #bangdiem th,#bangdiem td { border: 1px solid black; } body { font-family: "Times New Roman", Times, serif; } </style>';
+
+            // Set the value of inputHtmlContent to include CSS styles
+            inputHtmlContent.value = cssStyle + document.getElementById("noidung").innerHTML;
+
+
+            // Thêm inputHtmlContent vào form
+            form.appendChild(inputHtmlContent);
+
+            // Thêm form vào body để gửi dữ liệu
+            document.body.appendChild(form);
+
+            // Submit form
+            form.submit();
+
+            // Xóa form khỏi body sau khi hoàn thành
+            document.body.removeChild(form);
+        });
+    }
+    });
+  
+</script>

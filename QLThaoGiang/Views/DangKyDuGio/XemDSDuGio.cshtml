@@ -1,0 +1,254 @@
+﻿@model IEnumerable<QLThaoGiang.Models.DS>
+
+@{
+    Layout = "~/Views/Shared/Layoutweb.cshtml";}
+<style>
+    .form-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px; /* Điều chỉnh khoảng cách giữa ô select và nút button */
+    }
+
+        /* Điều chỉnh khoảng cách giữa các nút button */
+        .button-group button {
+            margin-left: 5px;
+        }
+
+    .custom-div {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        flex: 8; /* 80% */
+        margin-right: 10px;
+    }
+
+    .search-button {
+        flex: 1; 
+        margin-right: 10px;
+    }
+
+    .filter-button {
+        flex: 1; 
+    }
+
+
+    .select-div {
+        margin-top: 10px;
+    }
+</style>
+<link href="~/Content/style.css" rel="stylesheet" />
+
+<div style="text-align:center">
+    <h3>Quản Lý Dự Giờ</h3>
+</div>
+<div style="margin-bottom:10px; width: 90%; padding-left: 10%">
+    <div class="row">
+        <div class="col">
+            <form name="f" method="post" action="~/DangKyDuGio/XemDSDuGio">
+                <div class="custom-div">
+                    <input type="text" class="form-control search-input" name="tukhoa" value="@ViewBag.tukhoa" placeholder="Tìm kiếm">
+                    <button class="btn btn-primary search-button" type="submit">Tìm</button>
+                    <button class="btn btn-secondary filter-button" data-toggle="collapse" type="button" data-target="#noidung">Lọc</button>
+                </div>
+                <div class="select-div collapse" id="noidung">
+                    <select class="form-control select-option" name="tc">
+                        <option value="1" selected>--Chọn tiêu chí--</option>
+                        <option value="2">Theo Tên Giảng Viên</option>
+                        <option value="3">Theo Tiết</option>
+                        <option value="4">Theo Địa Điểm</option>
+
+                    </select>
+                    <select class="form-control select-option" name="hk">
+                        <option value="0" selected>Tất Cả Học Kỳ</option>
+                        <option value="1">Học Kỳ 1</option>
+                        <option value="2">Học kỳ 2</option>
+                    </select>
+                    <select class="form-control select-option" name="nh">
+                        <option value="2021" selected> từ 2021</option>
+                        <option value="2022">từ 2022</option>
+                        <option value="2023"> từ 2023</option>
+                        <option value="2024"> từ 2024</option>
+                    </select>
+                    <select class="form-control select-option" name="ct">
+                        <option value="0" selected>Tất cả chương trình</option>
+                        <option value="1">Công nghệ thông tin</option>
+                        <option value="2">Hệ thống thông tin</option>
+                        <option value="3">Kỹ thuật điện</option>
+                        <option value="3">Kỹ thuật cơ điện tử ô tô</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            Ngày giờ
+        </th>
+        <th>
+            Tiết bắt đầu
+        </th>
+        <th>
+            Giảng viên thao giảng
+        </th>
+        <th>
+            Địa điểm
+        </th>
+        <th>Cấp quyền thư ký</th>
+    </tr>
+    <tbody id="dl">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.FormatValue(item.NgayThaoGiang, "{0:dd/MM/yyyy}")
+
+                </td>
+                <td>
+                    @item.TietBD
+                </td>
+                <td>
+                    @item.GiaoVien
+                </td>
+                <td>
+                    @item.DiaDiem
+                </td>
+                <td>
+                    @if (item.ThuKy == 1)
+                    {
+                        <span>@item.GVDuGio</span>
+                    }
+                    else
+                    {
+                        <button type="submit" onclick="showDetails('@item.MaDK')" class="btn btn-warning">Chọn thư ký</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Chọn Giảng Viên Thư Ký Dự Giờ</h5>
+
+            </div>
+            <div class="modal-body" id="modalBody">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Thêm vào đầu trang HTML của bạn -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Thêm vào phần JavaScript của bạn -->
+<script type="text/javascript">
+    function showDetails(maNhapH) {
+
+        fetch('/DangKyDuGio/DuLieu?ma=' + maNhapH)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.code === 200) {
+
+
+                    var content = '<form name="f" action="/DangKyDuGio/CapQuyenThuKy" method="post" class="form-flex"> ';
+
+                    content += '<label for="selectName">Chọn tên:</label>';
+                    content += '<select name="ChonThuKy" class="form-control">';
+                    data.nglieu.forEach(function (item) {
+                        content += '<option value="' + item.MaDG + '">' + item.Ten + '</option>';
+                    });
+                    content += '</select>';
+
+                    content += '<div class="button-group"><button type="submit" class="btn btn-success" >Luu</button>';
+                    content += '<button type="button" class="btn btn-info" data-dismiss="modal" id="closeButton">Đóng';
+                    content += '</button></div></form >';
+                    document.getElementById('modalBody').innerHTML = content;
+
+                    // Hiển thị modal
+                    $('#myModal').modal('show');
+
+
+                } else {
+                    alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+                }
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+            });
+    }
+
+    const form = document.querySelector('form[name="f"]');
+    const tbody = document.getElementById('dl');
+    
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        tbody.innerHTML = '';
+        fetch('@Url.Action("XemDSDuGio", "DangKyDuGio")', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.code === 200) {
+                
+
+                data.danhsach.forEach(item => {
+                    const ngayThaoGiang = new Date(parseInt(item.NgayThaoGiang.substr(6))); // Chuyển đổi ngày từ số thành định dạng Date
+
+                    const formattedDate = ngayThaoGiang.toLocaleDateString('en-GB'); // Định dạng ngày thành "dd/MM/yyyy"
+
+                    if (item.ThuKy == 1) {
+                        tbody.insertAdjacentHTML('beforeend', `
+                            <tr>
+                                <td>${formattedDate}</td>
+                                <td>${item.TietBD}</td>
+                                <td>${item.GiaoVien}</td>
+                                <td>${item.DiaDiem}</td>
+                                <td><span>${item.GVDuGio}</span></td>
+                            </tr>
+                        `);
+                    } else {
+                        tbody.insertAdjacentHTML('beforeend', `
+                            <tr>
+                                <td>${formattedDate}</td>
+                                <td>${item.TietBD}</td>
+                                <td>${item.GiaoVien}</td>
+                                <td>${item.DiaDiem}</td>
+                                <td><button type="button" onclick="showDetails('${item.MaDK}')" class="btn btn-warning">Chọn thư ký</button></td>
+                            </tr>
+                        `);
+                    }
+                });
+            } else {
+                console.error('Lỗi khi nhận dữ liệu từ server.');
+            }
+        })
+        .catch(error => {
+            console.error('Lỗi khi gửi yêu cầu: ', error);
+        });
+    });
+</script>

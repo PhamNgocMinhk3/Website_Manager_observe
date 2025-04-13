@@ -1,0 +1,111 @@
+﻿@using QLThaoGiang.Controllers
+@model IEnumerable<ThongKeController.LichDataModel>
+
+@{
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form id="myForm" class="form-inline" method="post" action="@Url.Action("XuLy", "ThongKe")">
+            <select name="TC" id="TC" class="form-control mb-2 mr-sm-2" required>
+                <option value="0">Chọn Tiêu Chí</option>
+                <option value="4">Xem Chi Tiết</option>
+                <option value="9">Thống Kê Số Tiết Thao Giảng Dự Giờ</option>
+            </select>
+            <select name="HocKi" id="HocKi" class="form-control mb-2 mr-sm-2">
+                <option value="">Học Kì</option>
+                @foreach (var hocKi in ViewBag.HocKiList)
+                {
+                    <option value="@hocKi.MaHK">@hocKi.TenHK</option>
+                }
+            </select>
+            <select name="NamHoc" id="NamHoc" class="form-control mb-2 mr-sm-2">
+                <option value="">Năm Học</option>
+                @foreach (var namHoc in ViewBag.NamHocList)
+                {
+                    <option value="@namHoc.MaNH">@namHoc.TenNH</option>
+                }
+            </select>
+            <button type="submit" class="btn btn-info mb-2">Tìm kiếm</button>
+        </form>
+    </div>
+</div>
+
+<div class="col-md-12 mt-3">
+    <div id="tableContainer">@Html.Partial("_LichTable", Model)</div>
+    <div>
+        <canvas id="chartProduct"></canvas>
+    </div>
+</div>
+
+<div class="col-md-12 mt-3 text-center">
+    <button id="exportExcelBtn" class="btn btn-success">Xuất Excel</button>
+</div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        var formData = new FormData(this);
+
+        fetch('/ThongKe/XuLy', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('chartProduct').style.display = 'none';
+                document.getElementById('tableContainer').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                alert('Error fetching data.');
+            });
+    });
+
+    document.getElementById("exportExcelBtn").addEventListener("click", function () {
+        var tcValue = document.getElementById("TC").value; // Lấy giá trị của biến tcValue từ dropdown
+        var namhocValue = document.getElementById("NamHoc").value;
+        var hockiValue = document.getElementById("HocKi").value;
+        if (!namhocValue) {
+            namhocValue = 0;
+        }
+        if (!hockiValue) {
+            hockiValue = 0;
+        }
+        // Tạo form data và thêm giá trị của tcValue vào
+        var formData = new FormData();
+        formData.append("TC", tcValue);
+        formData.append("NamHoc", namhocValue);
+        formData.append("HocKi", hockiValue);
+
+
+        // Gửi yêu cầu xuất Excel với giá trị của TC được chọn
+        fetch('/ThongKe/ExportToExcel', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                // Tạo một link tạm thời để tải file Excel
+                var url = window.URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = 'Data.xlsx';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Lỗi khi xuất Excel:', error);
+                alert('Có lỗi khi xuất Excel.');
+            });
+    });
+
+</script>

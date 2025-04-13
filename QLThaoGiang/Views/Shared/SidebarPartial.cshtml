@@ -1,0 +1,82 @@
+﻿<nav id="sidebar">
+    <div class="sidebar-header" style="text-align: center; padding: 15px;">
+        <h5>@Session["Ten"]</h5>
+    </div>
+
+    <ul class="list-unstyled components">
+
+
+
+        <li>
+            <a href="~/DangKyThaoGiang/DangSachThaoGiang">Trang Chủ</a>
+        </li>
+
+
+        <li>
+            <a href="~/DangKyThaoGiang/DK">Đăng ký thao giảng</a>
+        </li>
+        <li>
+            <a href="~/DangKyThaoGiang/XemLichGiang">Xem lịch thao giảng</a>
+        </li>
+
+        <li>
+            <a href="~/DangKyDuGio/XemDKDG">Xem lịch dự giờ</a>
+        </li>
+
+
+
+        <li>
+            <a href="~/DangKyDuGio/XemBienBan">Biên Bản</a>
+        </li>
+
+        <li>
+            <a href="~/DangKyDuGio/XemLaiCacPhieuCham">Phiếu Chấm</a>
+        </li>
+        @if (Session["CapDo"] != null)
+        {
+            try
+            {
+                if (Session["CapDo"].ToString() == "1")
+                {
+                    <li>
+                        <a href="~/ThongKe/Index">Thống kê</a>
+                    </li>
+                    <li>
+                        <a href="~/DangKyDuGio/XemDSDuGio">Quản lý dự giờ</a>
+                    </li>
+                    <li>
+                        <a href="~/DangKyDuGio/XemTatCaBienBan">Quản Lý Biên Bản</a>
+                    </li>
+                }
+            }
+            catch 
+            {
+                
+            }
+          }
+
+    </ul>
+
+    <ul class="list-unstyled CTAs">
+        @if (Session["Ten"] != null)
+        {
+            <li>
+                <a href="~/User/DangXuat" class="download">Đăng xuất</a>
+            </li>
+            <li>
+                <a href="~/User/DoiMatKhau" class="download" style="background-color: #c2f512; color: black">Đổi mật khẩu</a>
+            </li>
+        }
+        else
+        {
+            <li>
+                <a href="~/User/DangNhap" class="download">Đăng nhập</a>
+            </li>
+            
+        }
+
+
+    </ul>
+</nav>
+
+

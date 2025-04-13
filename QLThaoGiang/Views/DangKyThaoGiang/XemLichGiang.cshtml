@@ -1,0 +1,143 @@
+﻿@model IEnumerable<QLThaoGiang.Models.DangKyThaoGiang>
+@{
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+@if (Session["TaiKhoan"] != null)
+{
+    <div class="table-container">
+        <table class="table">
+            <tr>
+
+                <th>
+                    Tiết
+                </th>
+                <th>
+                    Ngày Thao Giảng
+                </th>
+
+                <th>
+                    Tên Môn
+                </th>
+                <th>
+                    Địa Điểm
+                </th>
+
+
+                <th>
+                    Học Kỳ
+                </th>
+                <th>
+                    Tùy Chọn
+                </th>
+
+            </tr>
+            @if(ViewBag.kt==0){
+            
+                <tr>
+
+                    <td>
+                        Trống
+                    </td>
+                    <td>
+                        Trống
+                
+                    </td>
+
+                    <td>
+                        Trống
+                    </td>
+                    <td>
+                        Trống
+                    </td>
+
+
+                    <td>
+                        Trống
+                    </td>
+
+                    <td style="display: flex">
+
+                        Trống
+                    </td>
+                </tr>
+            
+            }
+            @if (Model != null)
+            {
+
+                foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TietBD)
+                        </td>
+                        <td>
+
+                            @Html.FormatValue(item.NgayThaoGiang, "{0:dd/MM/yyyy}")
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenMonHoc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaDiem)
+                        </td>
+
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HocKy.TenHK)
+                        </td>
+
+                        <td style="display: flex">
+
+                            <form action="~/DangKyThaoGiang/CTThaoGiang?id=@item.MaDK" method="post">
+                                <button class="btn btn-sm btn-info" name="view"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+                            </form>
+                            &nbsp
+
+                            <button class="btn btn-sm btn-danger" onclick="deleteItem(@item.MaDK)">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+}
+else
+{<p>Ban chua dang nhap</p>
+}
+<script>
+
+
+    function deleteItem(id) {
+
+        fetch('/DangKyThaoGiang/Xoa?id=' + id, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+        })
+            .then(response => response.json())
+            .then(result => {
+                // Xử lý phản hồi từ server
+                if (result.code === 200) {
+
+                    alert("Xóa thành công");
+                    location.reload();
+
+                } else {
+                    alert("Xóa thất bại, vì đã có người đăng ký dự giờ");
+                }
+            })
+            .catch(error => {
+                console.error("Lỗi khi gửi yêu cầu xóa:", error);
+            });
+    }
+</script>
+
+

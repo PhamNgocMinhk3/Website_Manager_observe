@@ -1,0 +1,126 @@
+﻿@model QLThaoGiang.Models.DangKyThaoGiang
+@{
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<style>
+    p {
+        color: black;
+    }
+
+    span {
+        color: #676565;
+    }
+</style>
+<div class="container">
+    <h4 style="text-align:center">Chi Tiết Thao Giảng</h4>
+
+
+    <hr />
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+            <p>
+                Giáo Viên Thao Giảng:
+                <span>
+                    @Html.DisplayFor(model => model.GiangVien.HoTenGV)
+                </span>
+            </p>
+
+
+
+            <p>
+                Tiết Bắt Đầu:
+                <span>
+                    @Html.DisplayFor(model => model.TietBD)
+                </span>
+            </p>
+
+
+
+            <p>
+                Ngày Thao Giảng:
+                <span>
+                    @Html.FormatValue(Model.NgayThaoGiang, "{0:dd/MM/yyyy}")
+
+                </span>
+            </p>
+
+            <p>
+                Mã Môn Học:
+                <span>
+                    @Html.DisplayFor(model => model.MaMH)
+                </span>
+            </p>
+
+            <p class="mb-3">
+                Tên Môn Học:
+                <span>
+                    @Html.DisplayFor(model => model.TenMonHoc)
+                </span>
+            </p>
+
+
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p class="mb-3">Năm Học:<span>  @Model.NamHoc.TenNH</span></p>
+
+
+            <p>
+                Địa Điểm:
+                <span>
+                    @Html.DisplayFor(model => model.DiaDiem)
+                </span>
+            </p>
+
+
+
+            <p>
+                Nhóm Học:
+                <span>
+                    @Html.DisplayFor(model => model.NhomHoc)
+                </span>
+            </p>
+            <p>Học Kỳ: <span>@Html.DisplayFor(model => model.HocKy.TenHK)</span></p>
+
+
+            <p>
+                Ghi Chú:
+                <span>
+                    @Html.DisplayFor(model => model.GhiChu)
+                </span>
+            </p>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+@if (Model.MaGV.ToString() != Session["Ma"].ToString())
+{
+    <div style="display: flex; justify-content: center; width:100%; margin-top:50px;">
+
+        <a href="~/DangKyDuGio/DKDG/@ViewBag.MaDK">
+            <buttun style="padding: 10px 40px; margin-right:5px" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Đăng Ký</buttun>
+        </a>
+        <a href="~/DangKyThaoGiang/DangSachThaoGiang">
+            <buttun style="padding: 10px 40px; margin-left: 5px" type="button" class="btn btn-danger" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Quay lại</buttun>
+        </a>
+    </div>
+
+}
+else
+{
+    <div style="display: flex; justify-content: center; width:100%; margin-top:50px;">
+
+        <a href="~/DangKyThaoGiang/DangSachThaoGiang">
+            <buttun style="padding: 10px 40px;" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Quay lại</buttun>
+        </a>
+    </div>
+}
+
+
+

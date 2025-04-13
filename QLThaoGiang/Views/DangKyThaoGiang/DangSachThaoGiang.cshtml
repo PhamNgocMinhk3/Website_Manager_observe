@@ -1,0 +1,95 @@
+﻿@using QLThaoGiang.Models;
+@using PagedList.Mvc
+@model PagedList.PagedList<DangKyThaoGiang>
+
+@{
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+
+}
+
+
+
+<div class="food-list">
+
+    <form method="post" action="@Url.Action("Search", "DangKyThaoGiang", new { id = "searchForm" })">
+        <div class="row">
+            <div class="col-6"><input class="form-control" type="text" name="keyword" id="keyword" placeholder="Nhập từ khóa..."></div>
+            <div class=" col-4">
+                <select name="searchField" class="form-control">
+                    <option value="TatCa">Tất cả</option>
+                    <option value="1">Tiết bắt đầu</option>
+                    <option value="2">Mã môn học</option>
+                    <option value="3">Học Kỳ</option>
+                    <option value="4">Họ tên giáo viên</option>
+                </select>
+            </div>
+            <div class="col-2"><button type="submit" class="form-control btn btn-info">Tìm kiếm</button></div>
+
+        </div>
+    </form>
+
+
+    <div class="table-container">
+        <table class="table mb-5">
+            <tr>
+                <th>
+                    Mã Môn
+                </th>
+                <th>
+                    Tên Môn
+                </th>
+                <th>
+                    Nhóm học
+                </th>
+                <th>
+                    Phòng
+                </th>
+                <th>
+                    Tiết bắt đầu
+                </th>
+                <th>
+                    Ngày
+                </th>
+                <th>
+                    GV thao giảng
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaMH</td>
+                    <td>@item.TenMonHoc</td>
+                    <td>@item.NhomHoc</td>
+                    <td>@item.DiaDiem</td>
+                    <td>@item.TietBD</td>
+                    <td>@Html.FormatValue(item.NgayThaoGiang, "{0:dd/MM/yyyy}")</td>
+                    <td>@item.GiangVien.HoTenGV</td>
+                    <td>
+
+                        <a role="button" href="~/DangKyThaoGiang/ChiTietThaoGiang/@item.MaDK" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Xem Chi Tiết</a>
+
+                    </td>
+                </tr>
+            }
+        </table>
+        <div>
+            Trang    @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+        </div>
+        <div class="MenuTrang">
+            @Html.PagedListPager(Model, page => Url.Action("DangSachThaoGiang", new { page = page }))
+        </div>
+        <style>
+            .MenuTrang {
+                text-align: center;
+                display: inline;
+            }
+        </style>
+    </div>
+</div>
+
+
+
+
+
+

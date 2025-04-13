@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QLThaoGiang.Models.CTDanhGia>
+
+<h4 >I.Đánh Giá Theo Tiêu Chí:</h4>
+<table class="table table-bordered" style=" border-color: black" id="bangdiem">
+    <thead>
+        <tr>
+            <th colspan="2" style="text-align:center;border-block-end:none;justify-content:center">Tiêu Chí Đánh Giá</th>
+            <th colspan="2" style="text-align:center">Điểm</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th colspan="2" style="border-block-start:none"></th>
+            <th>Điểm Chấm</th>
+            <th>Tối Đa</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.MaTC</th>
+                <td>@item.TieuChi.TenTieuChi:</td>
+                <td>
+
+                    @item.Diem
+                </td>
+                <td>@item.TieuChi.ToiDa</td>
+            </tr>
+
+        }
+
+
+
+        <tr>
+            <th scope="row"></th>
+            <td>Tổng Điểm:</td>
+            <td colspan="2" >
+                @ViewBag.Tong/100
+            </td>
+        </tr>
+    </tbody>
+</table>

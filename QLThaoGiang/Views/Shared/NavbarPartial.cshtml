@@ -1,0 +1,109 @@
+﻿
+<style>
+
+    #noty {
+        top: 60px;
+        background-color: #fbeaea;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        right: 5%;
+        border-radius: 20px;
+        padding: 20px;
+        max-height: 40vh;
+        box-shadow: 0px 0px 30px 3px rgb(0 0 0 / 65%);
+        overflow: auto;
+        transition: opacity 0.3s; /* Sử dụng transition để điều chỉnh tốc độ hiển thị */
+        opacity: 0;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <button type="button" id="sidebarCollapse" style="color: black;" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span style="color: black;">Menu</span>
+    </button>
+    <div class="lam" style="position: absolute; right:60px; top: 5px">
+
+
+        @if (Session["TaiKhoan"] != null)
+        {
+            <p>
+                <img style="width: 60px; height:60px; border-radius:50%" src="~/image/chuongtb.jpg" alt="chuongthongbao" onclick="showNotification()" />
+
+                @Html.Action("SoLTin", "DangKyThaoGiang")
+
+            </p>
+
+
+        }
+        else
+        { <p>Chua dang nhap</p>}
+
+
+    </div>
+    @if (Session["TaiKhoan"] != null)
+    {
+
+        <div id="noty">
+
+        </div>
+    }
+</nav>
+
+<script>
+    var notification = document.getElementById("noty");
+
+    function showNotification() {
+        if (notification.style.opacity === "0" || notification.style.opacity === "") {
+            notification.style.opacity = "1"; // Hiển thị thẻ
+
+
+            fetch('@Url.Action("TinNhan", "DangKyThaoGiang")')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Mạng không ổn định');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('noty').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                }
+            );
+
+
+        } else {
+            notification.style.opacity = "0"; // Ẩn thẻ
+
+        }
+    }
+
+</script>
+<script>
+    // Hàm xử lý khi click vào nút Xóa
+    function xoaThongBao(matb) {
+        // Gọi API để xóa thông báo
+        fetch('/User/Xoatb?matb=' + matb)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Lỗi khi xóa thông báo');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Kiểm tra mã trạng thái từ API
+                if (data.code === 200) {
+                    location.reload();
+                } else {
+                    alert("Lỗi hệ thống vui lòng thực hiện lại sau !");
+                }
+            })
+            .catch(error => {
+                // Xử lý lỗi nếu có
+                console.error('Có lỗi xảy ra:', error);
+                alert('Đã có lỗi xảy ra khi xóa thông báo');
+            });
+    }
+</script>

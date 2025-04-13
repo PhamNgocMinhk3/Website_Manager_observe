@@ -1,0 +1,16 @@
+﻿@model IEnumerable<QLThaoGiang.Models.NhanXet>
+
+
+@foreach (var item in Model)
+{<div class=" mb-3">
+        <label class="control-label col-md-3" style="font-weight:bold">@item.TenNhanXet :</label>
+        <div class="col-md-11">
+            <textarea class="form-control" size="70" name="NX@(item.MaNX)" id="GhiChu@(item.MaNX)"></textarea>
+        </div>
+        
+    </div>
+
+}
+
+
+

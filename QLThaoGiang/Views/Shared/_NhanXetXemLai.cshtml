@@ -1,0 +1,12 @@
+﻿@model IEnumerable<QLThaoGiang.Models.CTNhanXet>
+    @{ 
+        int diem = 0;
+    }
+<h4 >II.Các Nhận Xét Bổ Sung:</h4>
+@foreach (var item in Model)
+{ diem++;
+<div style="margin-bottom:5px">@diem.<b>@item.NhanXet.TenNhanXet: </b> <span>@item.NoiDung</span></div>
+        
+
+
+}

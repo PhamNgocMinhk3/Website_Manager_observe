@@ -1,0 +1,116 @@
+﻿@model QLThaoGiang.Models.DangKyThaoGiang
+
+@{
+    ViewBag.Title = "XemCTThaoGiang";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+
+<h2>Chi tiết đăng ký thao giảng</h2>
+
+<hr />
+
+
+    <div class"row" style="display: flex">
+        <div class="col-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    Tiết Bắt Đầu
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TietBD)
+                   
+                </dd>
+
+                <dt>
+                    Ngày Thao Giảng
+                </dt>
+
+                <dd>
+                    @Html.FormatValue(Model.NgayThaoGiang, "{0:dd/MM/yyyy}")
+                    
+                </dd>
+
+                <dt>
+                    Mã Môn Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MaMH)
+                    
+                </dd>
+
+                <dt>
+                    Tên Môn Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenMonHoc)
+                   
+                </dd>
+
+                <dt>
+                    Địa Điểm
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DiaDiem)
+                    
+                </dd>
+            </dl>
+        </div>
+        <div class="col-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    Nhóm Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NhomHoc)
+                    
+                </dd>
+
+                <dt>
+                    Ghi Chú
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.GhiChu)                    
+                </dd>
+
+                <dt>
+                    Học Kỳ
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HocKy.TenHK)
+
+                    
+                </dd>
+
+                <dt>
+                    Năm Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NamHoc.TenNH)                    
+                </dd>
+
+
+                <dt>
+                    Tên Bài Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenBaiHoc)
+                    
+
+                </dd>
+
+            </dl>
+        </div>
+
+    </div>
+  
+
+

@@ -1,0 +1,47 @@
+﻿@model QLThaoGiang.Models.PhieuCham
+    <style>
+        th, td {
+            padding: 5px;
+        }
+    </style>
+<table width="100%">
+    <tr>
+        <td style="text-align: center; width:47%">
+            <div>TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT</div>
+            <div>KHOA/VIỆN KỸ THUẬT CÔNG NGHỆ</div>
+        </td>
+        <td  style="text-align: center; width: 53%;">
+            <div>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+            <div><b>Độc lập - Tự do - Hạnh phúc</b></div>
+        </td>
+    </tr>
+</table>
+<h2 style="text-align:center">Phiếu Chấm Thao Giảng</h2>
+
+<table width="100%" >
+    <tr >
+        <td width="50%">Giảng viên được đánh giá: @Model.DuGio.DangKyThaoGiang.GiangVien.HoTenGV</td>
+        <td width="50%">Nhóm Học Phần: @Model.DuGio.DangKyThaoGiang.NhomHoc</td>
+      
+        
+        
+    </tr>
+    <tr>
+        <td>Ngày: @Html.FormatValue(@Model.DuGio.DangKyThaoGiang.NgayThaoGiang, "{0:dd/MM/yyyy}")</td>
+        <td>Tiết BD-KT: @Model.DuGio.DangKyThaoGiang.TietBD</td>
+    </tr>
+    <tr>
+    <td>Khoa / Viện: Kỹ Thuật Công Nghệ</td><td>Tên bài giảng: @Model.DuGio.DangKyThaoGiang.TenBaiHoc</td>
+    </tr>
+    <tr><td>Học phần: @Model.DuGio.DangKyThaoGiang.TenMonHoc</td><td>Địa Điểm: @Model.DuGio.DangKyThaoGiang.DiaDiem</td></tr>
+    <tr>
+        <td colspan="2">
+            @Html.Action("TenCT", "DangKyDuGio", new { ma = Model.MaPhieuCham })
+        </td>
+    </tr>
+</table>
+
+
+
+
+

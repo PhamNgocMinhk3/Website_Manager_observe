@@ -1,0 +1,103 @@
+﻿
+@{ ViewBag.Title = "DangKyThaoGiang";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml"; }
+
+<div class="container align-content-center">
+    <h3 style="text-align:center; margin-right: 30px">Nhập thông tin thao giảng</h3>
+    <div>
+        <form name="f" action="~/DangKyThaoGiang/DK" method="post">
+            <div class="form-group">
+                <hr />
+
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Tiết Bắt Đầu-Tiết Kết Thúc:</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="TietBD" required />
+                    </div>
+
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Ngày Thao Giang:</label>
+                    <div class="col-md-9">
+                        <input type="date" class="form-control" size="70" name="NgayThaoGiang" required />
+                    </div>
+                </div>
+
+
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Mã môn học:</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="MaMH">
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Tên môn học:</label>
+                    <div class="col-md-9">
+
+                        <input type="text" class="form-control" name="TenMon">
+
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Tên bài học:</label>
+                    <div class="col-md-9">
+
+                        <input type="text" class="form-control" name="TenBaiHoc">
+
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Nhóm học :</label>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="Nhom">
+
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Địa Điểm :</label>
+
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="DiaDiem">
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Học kỳ</label>
+                    <div class="col-md-9">
+                        @Html.DropDownList("MaHK", ViewBag.HocKyList as SelectList, new { @class = "form-control" })
+                   
+                    </div>
+                </div>
+
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Năm Học</label>
+                    <div class="col-md-9">
+
+                        @Html.DropDownList("MaNH", ViewBag.NamHocList as SelectList, new { @class = "form-control" })
+
+
+
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="control-label col-md-12">Ghi Chú :</label>
+                    <div class="col-md-9">
+                        <textarea type="text" class="form-control" size="70" name="GhiChu" id="sGhiChu"></textarea>
+                    
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div class="col-md-offset-2 col-md-10 text-center">
+                        <input type="submit" value="Đăng Ký" class="btn btn-success" style="width:30%;" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <br />
+        </div>
+        <div class="m-3">
+        </div>
+    </div>
+</div>
