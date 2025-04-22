@@ -1,0 +1,68 @@
+﻿<!-- _LichTable.cshtml -->
+@using QLThaoGiang.Controllers
+@model IEnumerable<ThongKeController.LichDataModel>
+
+<table class="table table-bordered table-striped mt-2">
+    <thead class="thead-dark">
+        <tr>
+            @if (Model != null && Model.Any() && Model.First().MaMH != null)
+            {
+                <th scope="col">MaMH</th>
+                <th scope="col">Tên Giảng Viên Đứng Lớp</th>
+                <th scope="col">Giảng Viên Tham Dự</th>
+                <th scope="col">Tên Môn Học</th>
+                <th scope="col">Nhóm Học</th>
+                <th scope="col">Địa Điểm</th>
+                <th scope="col">Tiết Bắt Đầu</th>
+                <th scope="col">Năm Học</th>
+                <th scope="col">Học Kì</th>
+                <th scope="col">Ngày Thao Giảng</th>
+            }
+            else
+            {
+                <th scope="col">Họ Tên GV</th>
+                <th scope="col">Tổng số Tiết Thao Giảng</th>
+                <th scope="col">Số Tiết Dự Giờ</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+
+                    @if (@item.MaMH != null)
+                    {
+                        <td>@item.MaMH</td>
+                        <td>@item.GVC</td>
+                        <td>@item.GVDD</td>
+                        <td>@item.TenMonHoc</td>
+                        <td>@item.NhomHoc</td>
+                        <td>@item.DiaDiem</td>
+                        <td>@item.TietBD</td>
+                        <td>@item.TenNH</td>
+                        <td>@item.TenHK</td>
+                        <td>@item.NgayThaoGiang.ToShortDateString()</td>
+                    }
+                    else
+                    {
+                        <td> @item.HoTenGV </td>
+                        <td> @item.TongTietThaoGiang </td>
+                        <td> @item.SoTietDuGio </td>
+
+                    }
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2" class="text-center">No data available</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

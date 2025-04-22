@@ -1,0 +1,158 @@
+﻿@model QLThaoGiang.Models.DangKyThaoGiang
+
+@{
+    ViewBag.Title = "CTThaoGiang";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+
+<h2>Chi tiết đăng ký thao giảng</h2>
+<a role="button" class="btn btn-primary" href="~/DangKyThaoGiang/XemLichGiang">Trở về</a>
+
+<button class="btn btn-warning" type="button" onclick="showInputs()"> Cập Nhật</button>
+<hr />
+
+<form action="~/DangKyThaoGiang/CapNhatThaoGiang" method="post">
+    <div class"row" style="display: flex">
+        <div class="col-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    Tiết Bắt Đầu
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TietBD)
+                    <input type="hidden" value="@Model.TietBD" class="form-control" name="TietBD" required />
+                </dd>
+
+                <dt>
+                    Ngày Thao Giảng
+                </dt>
+
+                <dd>
+                    @Html.FormatValue(Model.NgayThaoGiang, "{0:dd/MM/yyyy}")
+                    <input type="hidden" class="form-control" size="70" name="NgayThaoGiang" required />
+                </dd>
+
+                <dt>
+                    Mã Môn Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MaMH)
+                    <input type="hidden" value="@Model.MaMH" class="form-control" name="MaMH">
+                </dd>
+
+                <dt>
+                    Tên Môn Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenMonHoc)
+                    <input type="hidden" value="@Model.TenMonHoc" class="form-control" name="TenMon">
+                </dd>
+
+                <dt>
+                    Địa Điểm
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DiaDiem)
+                    <input type="hidden" value="@Model.DiaDiem" class="form-control" name="DiaDiem">
+                </dd>
+            </dl>
+        </div>
+        <div class="col-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    Nhóm Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NhomHoc)
+                    <input type="hidden" value="@Model.NhomHoc" class="form-control" name="Nhom">
+                </dd>
+
+                <dt>
+                    Ghi Chú
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.GhiChu)
+                    <textarea valua="@Model.GhiChu" style="display: none;" class="form-control" size="70" name="GhiChu"></textarea>
+                </dd>
+
+                <dt>
+                    Học Kỳ
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HocKy.TenHK)
+
+                    <select style="width: 80px; display: none;" class="form-control" id="MaHK" name="MaHK">
+                        <option value="1">HK1</option>
+                        <option value="2">HK2</option>
+                        <option value="3">HK3</option>
+                    </select>
+                </dd>
+
+                <dt>
+                    Năm Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NamHoc.TenNH)
+
+                    <select style="width: 170px; display: none;" name="MaNH" id="MaNH" class="form-control">
+                        @foreach (var item in ViewBag.NamHocList)
+                        {
+                            <option value="@item.Value" @(item.Text == Model.NamHoc.TenNH ? "selected" : "")>@item.Text</option>
+                        }
+                    </select>
+                </dd>
+
+
+                <dt>
+                    Tên Bài Học
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenBaiHoc)
+                    <input type="hidden" value="@Model.TenBaiHoc" class="form-control" name="TenBaiHoc">
+
+                </dd>
+
+            </dl>
+        </div>
+
+    </div>
+    <input type="hidden" name="ma" value="@ViewBag.madk"/>
+    <div style="text-align:center"><button class="btn btn-success" id="capnhat" style="margin-right:20px; display:none;" type="submit">Xác Nhận</button></div>
+</form>
+<script>
+    var nutbam = document.getElementById("capnhat");
+    function showInputs() {
+        // Lặp qua tất cả các ô input hidden và hiển thị chúng
+        var hiddenInputs = document.querySelectorAll('input[type="hidden"]');
+        for (var i = 0; i < hiddenInputs.length-1; i++) {
+            if (i === 1) {
+                hiddenInputs[i].type = 'date';
+            } else {
+                hiddenInputs[i].type = 'text';
+            }
+        }
+        nutbam.style.display = "inline-block";
+
+        // Lặp qua tất cả các select và textarea ẩn và hiển thị chúng
+        var hiddenSelects = document.querySelectorAll('select[style*="display: none;"]');
+        for (var i = 0; i < hiddenSelects.length; i++) {
+            hiddenSelects[i].style.display = 'block';
+        }
+
+        var hiddenTextareas = document.querySelectorAll('textarea[style*="display: none;"]');
+        for (var i = 0; i < hiddenTextareas.length; i++) {
+            hiddenTextareas[i].style.display = 'block';
+        }
+    }
+</script>
+
+

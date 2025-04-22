@@ -1,0 +1,55 @@
+﻿@model IEnumerable<QLThaoGiang.Models.PhieuCham>
+
+@{
+    ViewBag.Title = "XemLaiCacPhieuCham";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+
+
+}
+
+<h2 style="text-align: center; color: #684246 ">Xem Lại Các Phiếu Đã Chấm</h2>
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            Ngày Lập
+        </th>
+        <th>
+            Giáo viên được đánh giá
+        </th>
+
+        <th>Tùy chọn</th>
+    </tr>
+    @if (ViewBag.kt==0) {
+            <tr>
+
+                <td>
+                    Trống
+                </td>
+                <td>
+                    Trống
+                </td>
+                <td>
+                   Trống
+                </td>
+            </tr>
+    }
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDanhGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuGio.DangKyThaoGiang.GiangVien.HoTenGV)
+            </td>
+            <td>
+                <a role="button" class="btn btn-primary" href="~/DangKyDuGio/XemPhieu?ma=@item.MaPhieuCham">Chi Tiết</a>
+            </td>
+        </tr>
+    }
+
+</table>

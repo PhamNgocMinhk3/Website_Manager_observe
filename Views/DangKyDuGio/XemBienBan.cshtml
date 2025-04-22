@@ -1,0 +1,82 @@
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<QLThaoGiang.Models.DSBienBanGV>
+
+@{
+    ViewBag.Title = "XemBienBan";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+
+<style>
+    /* CSS tùy chỉnh */
+    .no-document-alert {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        margin-bottom: 38vh;
+    }
+</style>
+
+<div class="container">
+    @if (Session["CapDo"] != null)
+    {
+        try
+        {
+            if (Session["CapDo"].ToString() == "1")
+            {
+                <h2 style="text-align:center;margin-bottom:20px; font-weight:200">Xem Tất Cả Các Biên Bản</h2>
+            }
+        }
+        catch
+        {
+
+        }
+    }
+    <div class="row">
+        @if (ViewBag.kt == 0)
+        {
+            <div class="container">
+                <!-- Thẻ div thông báo -->
+                <div class="alert no-document-alert" role="alert">
+                    <strong>Thông báo:</strong> Hiện chưa có biên bản nào được lập bởi bạn.
+                </div>
+            </div>
+        }
+
+        @foreach (var item in Model)
+        {
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+
+                    @Html.Action("XuLyAnhBienBan", "DangKyDuGio", new { maDG = item.MaDuGio })
+                    <div class="card-body" style="font-family:'Times New Roman', Times, serif; font-size: 19px">
+
+                        <div class="control-label mb-1"><b>@Html.FormatValue(item.NgayThaoGiang, "{0:dd/MM/yyyy}")</b></div>
+                        <div class="control-label mb-1"><b>Tiết @item.TietBD</b></div>
+                        <div class="control-label mb-1"><b>@item.HoTenGV</b></div>
+                        <div class="control-label mb-1"><b>@item.DiaDiem</b></div>
+                        @Html.Action("XuLyNutBienBan", "DangKyDuGio", new { maDG = item.MaDuGio })
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div style="font-weight:900">
+        Trang @(Model.PageNumber < Model.PageCount ? Model.PageNumber : Model.PageCount) / @Model.PageCount
+    </div>
+    <div class="MenuTrang">
+        <!-- Sử dụng PagedListPager để tạo các nút phân trang -->
+        @Html.PagedListPager(Model, page => Url.Action("XemBienBan", new { page }))
+    </div>
+    <style>
+        .MenuTrang {
+            text-align: center;
+            display: inline;
+        }
+    </style>
+</div>
+
+

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<QLThaoGiang.Models.NX>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        if (!string.IsNullOrEmpty(item.NoiDung))
+        {
+            <li>@item.NoiDung</li>
+        }
+    }
+</ul>

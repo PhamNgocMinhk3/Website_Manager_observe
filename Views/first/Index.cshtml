@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "Myweb";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
+      rel="stylesheet" />
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet" />
+<style>
+    #myModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        text-align: center;
+    }
+
+    .close {
+        color: #000000;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .modal-header {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    .modal-header {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">Hỗ Trợ Thao Giảng</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" onclick="openModal()">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">Chào mừng thầy cô đã đến với nền tảng đăng ký thảo giảng</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">
+                    Bắt đầu trải nghiệm tiện ích và linh hoạt khi quản lý lịch trình dạy học
+                    một cách dễ dàng với giao diện trực quan và thân thiện hơn ngay tại đây.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div id="myModal">
+
+    <div class="modal-content" style="background-color: transparent;">
+
+
+
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-xl-10">
+                    <div class="card" style="border-radius: 1rem;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-5 d-none d-md-block ">
+                                <img class="img-responsive img-rounded " style="margin-top:150px;width:100%;height:25%;" src="~/Image/Logo.png" />
+                            </div>
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                                <div class="card-body p-4 p-lg-5 text-black">
+                                    <div class="modal-header"><span class="close" onclick="closeModal()">&times;</span></div>
+                                    @using (Html.BeginForm("DangNhap", "User", FormMethod.Post))
+                                    {
+                                        @Html.ValidationSummary(true)
+                                        <div class="d-flex align-items-center mb-3 pb-1">
+                                            <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                            <span class="h1 fw-bold mb-0 " style="color:dodgerblue">TDMU</span>
+                                        </div>
+
+                                        <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 2px;text-align: center;">Đăng Nhập</h4>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="TenDN" name="TenDN" class="form-control" />
+                                            <label class="form-label" for="form3Example">Username</label>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="MatKhau" name="MatKhau" class="form-control" />
+                                            <label class="form-label" for="form3Example4">Password</label>
+                                        </div>
+
+                                        <div class="pt-1 mb-4">
+                                            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                                        </div>
+                                        <p style="color:red">@ViewBag.TB</p>
+
+                                        <a class="small text-muted" href="#!">Forgot password?</a>
+                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">
+                                            Don't have an account? <a href="#!" style="color: #393f81;">Register here</a>
+                                        </p>
+                                    }
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+    </div>
+</div>
+<script>
+    function openModal() {
+        var modal = document.getElementById('myModal');
+
+
+        modal.style.display = 'flex';
+        modal.style.zIndex = '1'; // Add this line to set the z-index
+
+
+
+
+
+
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+
+
+        modal.style.display = 'none';
+        modal.style.zIndex = ''; // Reset the z-index when closing
+
+
+
+
+    }
+
+
+</script>

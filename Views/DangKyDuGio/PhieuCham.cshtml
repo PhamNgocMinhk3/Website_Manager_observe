@@ -1,0 +1,144 @@
+﻿@model QLThaoGiang.Models.DuGio
+@{ ViewBag.Title = "PhieuCham";
+    Layout = "~/Views/Shared/LayoutWeb.cshtml";
+}
+<script src="~/ckeditor/ckeditor.js"></script>
+<div class="container align-content-center">
+    <table width="100%">
+        <tr>
+            <td style="text-align: center; width:47%;">
+                <div>TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT</div>
+                <div>KHOA/VIỆN KỸ THUẬT CÔNG NGHỆ</div>
+            </td>
+            <td style="text-align: center; width: 53%;">
+                <div>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                <div><b>Độc lập - Tự do - Hạnh phúc</b></div>
+            </td>
+        </tr>
+    </table>
+    <h2 style="text-align:center">Phiếu Chấm Thao Giảng</h2><hr />
+    <div>
+        <div style="display:flex;width:100%">
+            <div style="width:50%">
+
+                <div class=" mb-3">
+                    <span class="control-label col-md-3">Giảng viên được đánh giá:</span>
+                    <span class="col-md-9" id="GVDanhGia" name="GVDanhGia"> @Model.DangKyThaoGiang.GiangVien.HoTenGV</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Ngày: </span>
+                    <span class="col-md-9" name="Ngay" id="Ngay">
+                        @Html.FormatValue(Model.DangKyThaoGiang.NgayThaoGiang, "{0:dd/MM/yyyy}")
+                    </span>
+                </div>
+
+                <div class=" mb-3">
+                    <span class="control-label col-md-3">Khoa / Viện: </span>
+                    <span class="col-md-9" id="Khoa" name="Khoa">Viện Kỹ Thuật Công Nghệ</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Học phần:</span>
+                    <span class="col-md-9" id="HocPhan" name="HocPhan">@Model.DangKyThaoGiang.TenMonHoc</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Học Kỳ - Năm Học:</span>
+                    <span class="col-md-9" id="HocPhan" name="HocPhan">Chua Cap Nhat</span>
+                </div>
+            </div>
+            <div style="width:50%">
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Lớp:</span>
+                    <span class="col-md-9" id="Lop" name="Lop">@Model.DangKyThaoGiang.NhomHoc</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Số sinh viên:</span>
+                    <span class="col-md-9" id="SoSV" name="SoSV">56</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Tiết BD-KT:</span>
+                    <span class="col-md-9" id="TietThu" name="TietThu">@Model.DangKyThaoGiang.TietBD</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Tên bài giảng:</span>
+                    <span id="TenBaiGiang" name="TenBaiGiang">@Model.DangKyThaoGiang.TenBaiHoc</span>
+                </div>
+                <div class=" mb-3">
+                    <span class="control-label col-md-2">Địa Điểm :</span>
+                    <span class="col-md-9" id="DiaDiem" name="DiaDiem">@Model.DangKyThaoGiang.DiaDiem</span>
+                </div>
+            </div>
+
+        </div>
+        @*Nếu lập rồi thì không được làm nữa, chỉ xem lại thôi*@
+        <form class="form-group" method="post" action="~/DangKyDuGio/ThemPhieuCham">
+            <hr />
+            <h4 style="">I.Đánh Giá Theo Tiêu Chí :</h4>
+            @Html.Action("TieuChi", "DangKyDuGio")
+            <hr />
+            <h4 style="">II.Các Nhận Xét Bổ Sung :</h4>
+
+            @Html.Action("NhanXet", "DangKyDuGio")
+            <input type="hidden" name="MaDuGio" value="@ViewBag.madg" />
+            <div class="form-group ">
+                <div class="col-md-offset-2 col-md-10 text-center">
+                    <input type="submit" value="Xác nhận" class="btn btn-success" style="width:30%;" />
+                </div>
+            </div>
+
+        </form>
+        <div>
+            <br />
+        </div>
+        <div class="m-3">
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        //định danh
+        const input1 = document.getElementById("Diem1");
+        const input2 = document.getElementById("Diem2");
+        const input3 = document.getElementById("Diem3");
+        const input4 = document.getElementById("Diem4");
+        const input5 = document.getElementById("Diem5");
+        const input6 = document.getElementById("Diem6");
+        const input7 = document.getElementById("Diem7");
+        const input8 = document.getElementById("Diem8");
+        const input9 = document.getElementById("Diem9");
+        const input10 = document.getElementById("Diem10");
+
+        const resultInput = document.getElementById("DiemTong");
+
+        // Thêm sự kiện khi giá trị của input1 hoặc input2 thay đổi
+        input1.addEventListener("input", updateResult);
+        input2.addEventListener("input", updateResult);
+        input3.addEventListener("input", updateResult);
+        input4.addEventListener("input", updateResult);
+        input5.addEventListener("input", updateResult);
+        input6.addEventListener("input", updateResult);
+        input7.addEventListener("input", updateResult);
+        input8.addEventListener("input", updateResult);
+        input9.addEventListener("input", updateResult);
+        input10.addEventListener("input", updateResult);
+
+
+        // Hàm cập nhật kết quả khi giá trị của input1 hoặc input2 thay đổi
+        function updateResult() {
+            const num1 = parseFloat(input1.value) || 0;
+            const num2 = parseFloat(input2.value) || 0;
+            const num3 = parseFloat(input3.value) || 0;
+            const num4 = parseFloat(input4.value) || 0;
+            const num5 = parseFloat(input5.value) || 0;
+            const num6 = parseFloat(input6.value) || 0;
+            const num7 = parseFloat(input7.value) || 0;
+            const num8 = parseFloat(input8.value) || 0;
+            const num9 = parseFloat(input9.value) || 0;
+            const num10 = parseFloat(input10.value) || 0;
+            const sum = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
+
+            resultInput.value = sum;
+        }
+    });
+
+</script>
+

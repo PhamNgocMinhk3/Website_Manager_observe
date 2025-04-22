@@ -1,0 +1,45 @@
+﻿@model IEnumerable<QLThaoGiang.Models.TieuChi>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th colspan="2" style="text-align:center;border-block-end:none;justify-content:center">Tiêu Chí Đánh Giá</th>
+            <th colspan="2" style="text-align:center">Điểm</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th colspan="2" style="border-block-start:none"></th>
+            <th>Điểm Chấm</th>
+            <th>Tối Đa</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.MaTC</th>
+                <td>@item.TenTieuChi :</td>
+                <td>
+
+                    <input type="number" max="@item.ToiDa" min="0" value="0" class="form-control" id="Diem@(item.MaTC)" name="Diem@(item.MaTC)">
+                </td>
+                <td>@item.ToiDa</td>
+            </tr>
+        }
+
+
+
+        <tr>
+            <th scope="row"></th>
+            <td colspan="1">Tổng Điểm :</td>
+            <td colspan="2" style="display:flex;">
+                <input type="number" max="100" min="0" class="form-control" id="DiemTong" name="DiemTong" readonly>
+                <span style="margin-top:6px;  ">/100</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+

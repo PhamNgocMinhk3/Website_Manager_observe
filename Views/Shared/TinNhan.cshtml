@@ -1,0 +1,39 @@
+﻿@model IEnumerable<QLThaoGiang.Models.CT_ThongBao>
+
+<style>
+    .rechuot {
+        cursor: pointer;
+    }
+</style>
+@foreach (var item in Model)
+{
+    if (item.TrangThaiDoc == false)
+    {<div class="tin" style="height: 45px; width: 100%; margin-bottom: 10px; background-color: #e2c5c5; display: flex; align-items: center; justify-content: center; border-radius: 12px">
+            <a role="button" href="~/DangKyThaoGiang/XemCTThaoGiang?matb=@item.MaTB">@item.ThongBao.DangKyThaoGiang.GiangVien.HoTenGV đã cập nhật thông tin dự giờ ngày <b> @Html.FormatValue(item.ThongBao.DangKyThaoGiang.NgayThaoGiang, "{0:dd/MM/yyyy}")</b></a>
+
+        </div>
+        <a  role="button" onclick="xoaThongBao('@item.MaTB')" style="text-align: right; margin-top: -15px; margin-right: 10px; display:block;">
+            <span class="rechuot" style="background-color: #e7b591; padding: 5px 10px; border-radius: 10px">Xóa</span>
+        </a>
+
+    }
+    else
+    {
+        <div class="tin" style="height: 45px; width:100%;margin-bottom: 10px; background-color: #ffffff; display: flex; align-items:center; justify-content: center; border-radius: 12px">
+            <a role="button" href="~/DangKyThaoGiang/XemCTThaoGiang?matb=@item.MaTB">@item.ThongBao.DangKyThaoGiang.GiangVien.HoTenGV đã cập nhật thông tin dự giờ ngày<b> @Html.FormatValue(item.ThongBao.DangKyThaoGiang.NgayThaoGiang, "{0:dd/MM/yyyy}")</b></a>
+
+        </div>
+        <a role="button"  onclick="xoaThongBao('@item.MaTB')" style="text-align: right; margin-top: -15px; margin-right: 10px; display:block;">
+            <span class="rechuot" style="background-color: #e7b591; padding: 5px 10px; border-radius: 10px">Xóa</span>
+        </a>
+
+    }
+
+
+}
+@if (ViewBag.sl == 0)
+{
+    <div>Bạn chưa có thông báo nào !</div>
+}
+
+
